@@ -57,9 +57,9 @@ public class CityController {
 	//===locally handling exception--> means if ArithmeticException occurs within this class
 //	this method will
 //	be executed
-	//==========================================
+	//==========================================s
 	@ExceptionHandler(value=ArithmeticException.class)
-	public Map<String,String> exceptionHandlerForArithmeticException(){
+	public Map<String,String> exceptionHandlerForArithmeticException(Exception e){
 		Map<String,String> m=new HashMap<>();
 		m.put("Message", "Arthimetic Exception occured");
 		return m;
